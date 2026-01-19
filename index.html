@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>Karim Portfolio</title>
 </head>
+ 
+
 
 <body>
-
-
-    <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
 
 
     <div id="achtergrond">
@@ -62,7 +61,7 @@
             <div class="me-box">
                 <div class="me" id="home">
                     <div class="foto">
-                        <img id="profileImg" src="./assets/my_halloween_pfp__by_lilpengu111_dgay7ss-fullview.jpg"
+                        <img id="profileImg" src="assets/WhatsApp Image 2026-01-19 at 23.17.49.jpeg"
                             alt="profile photo" class="foto1">
                     </div>
 
@@ -75,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="about-title">
+            <div class="about-title" id="about">
                 <p>𝔸𝕓𝕠𝕦𝕥 𝕄𝕖</p>
             </div>
             <div class="about-box">
@@ -95,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="timeline-box-left">
+            <div class="timeline-box-left" id="projects">
                 <p>𝕋𝕀𝕄𝔼𝕃𝕀ℕ𝔼</p>
             </div>
 
@@ -142,7 +141,7 @@
             <div class="line"></div>
 
 
-            <div class="skil-box">
+            <div class="skil-box" id="skills">
                 <p>𝕄𝕐 𝕊𝕂𝕀𝕃𝕃𝕊</p>
             </div>
 
@@ -150,7 +149,7 @@
                 <img src="assets/html.png" alt="html" class="html " >
                 <img src="assets/css.png" alt="css" class="css " >
                 <img src="assets/js.png" alt="js" class="js " >
-                <img src="assets/eclipse.png" alt="eclipse" class="eclipse "
+                <img src="assets/eclipse.png" alt="eclipse" class="eclipse " >
                 <img src="assets/visual studio code.png" alt="vsc" class="vsc ">
                 <img src="assets/git.png" alt="git" class="git ">
                 <img src="assets/flowgo.png" alt="flowgo" class="flowgo ">
@@ -162,7 +161,7 @@
                 <img src="assets/next.png" alt="next" class="next ">
             </div>
 
-            <div class="contact-me-box">
+            <div class="contact-me-box" id="contact">
                 <div class="contact-content">
                     <p class="contact-title">ℂ𝕠𝕟𝕥𝕒𝕔𝕥 <span class="contact-highlight">𝕄𝕖</span></p>
                     <p class="contact-subtitle">𝔻𝕠 𝕪𝕠𝕦 𝕙𝕒𝕧𝕖 𝕒 𝕢𝕦𝕖𝕤𝕥𝕚𝕠𝕟 𝕠𝕣 𝕨𝕒𝕟𝕥 𝕥𝕠 𝕨𝕠𝕣𝕜
@@ -172,9 +171,39 @@
             </div>
 
 
+           
             <div class="contact-info-box">
+                <div class="contact-form-container">
+                    
+                   
+                    <form class="contact-form" id="contactForm">
+                        
+                       
+                        <div class="form-group">
+                            <label for="name">Naam:</label>
+                            <input type="text" id="name" name="name" placeholder="Voer je naam in" required>
+                        </div>
 
-            
+                       
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Voer je email in" required>
+                        </div>
+
+                       
+                        <div class="form-group">
+                            <label for="message">Bericht:</label>
+                            <textarea id="message" name="message" placeholder="Voer je bericht in" rows="5" required></textarea>
+                        </div>
+
+                       
+                        <button type="submit" class="button">Bericht Verzenden</button>
+                    </form>
+
+                    
+                    
+
+                </div>
             </div>
 
         </main>
@@ -197,7 +226,7 @@
     <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./server/main.js"></script>
+    <script src="./server/scroller.js"></script>
 
 </body>
 
